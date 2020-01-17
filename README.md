@@ -22,3 +22,5 @@ oc new-app quay.io/quarkus/ubi-quarkus-native-s2i:19.2.1~https://github.com/mikh
 ```bash
 oc expose svc/natcap-hello
 ```
+## WebHooks for RedHat CRC
+https://api.crc.testing:6443/apis/build.openshift.io/v1/namespaces/natcap-crc/buildconfigs/natcap-hello/webhooks/#########/generic

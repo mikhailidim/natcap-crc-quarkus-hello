@@ -18,3 +18,7 @@ oc new-project natcap-crc
 ```bash
 oc new-app quay.io/quarkus/ubi-quarkus-native-s2i:19.2.1~https://github.com/mikhailidim/natcap-crc-quarkus-hello.git --name=natcap-hello
 ```
+4. Expose new application 
+```bash
+oc expose svc/natcap-hello
+```

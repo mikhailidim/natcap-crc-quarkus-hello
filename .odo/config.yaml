@@ -1,0 +1,12 @@
+kind: LocalConfig
+apiversion: odo.openshift.io/v1alpha1
+ComponentSettings:
+  Type: httpd:latest
+  SourceLocation: ./
+  SourceType: local
+  Ports:
+  - 8080/TCP
+  - 8443/TCP
+  Application: odo-app
+  Project: quarkus
+  Name: odo-hello

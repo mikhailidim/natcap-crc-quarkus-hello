@@ -21,7 +21,7 @@ public class GreetingResourceTest {
     @Test
     public void testGreetingEndpoint(){
         given()
-            .when().get("/greeting/Test")
+            .when().get("/hello/greeting/Test")
             .then()
                 .statusCode(200)
                 .body(is("Hello Test"));
